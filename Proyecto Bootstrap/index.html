@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="icon" href="./assets/imagenes/logo.png" >
+    <title>Proyecto</title>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="dropdown">
+            <a class="btn dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-rocket-takeoff" viewBox="0 0 16 16">
+                    <path d="M9.752 6.193c.599.6 1.73.437 2.528-.362.798-.799.96-1.932.362-2.531-.599-.6-1.73-.438-2.528.361-.798.8-.96 1.933-.362 2.532Z"/>
+                    <path d="M15.811 3.312c-.363 1.534-1.334 3.626-3.64 6.218l-.24 2.408a2.56 2.56 0 0 1-.732 1.526L8.817 15.85a.51.51 0 0 1-.867-.434l.27-1.899c.04-.28-.013-.593-.131-.956a9.42 9.42 0 0 0-.249-.657l-.082-.202c-.815-.197-1.578-.662-2.191-1.277-.614-.615-1.079-1.379-1.275-2.195l-.203-.083a9.556 9.556 0 0 0-.655-.248c-.363-.119-.675-.172-.955-.132l-1.896.27A.51.51 0 0 1 .15 7.17l2.382-2.386c.41-.41.947-.67 1.524-.734h.006l2.4-.238C9.005 1.55 11.087.582 12.623.208c.89-.217 1.59-.232 2.08-.188.244.023.435.06.57.093.067.017.12.033.16.045.184.06.279.13.351.295l.029.073a3.475 3.475 0 0 1 .157.721c.055.485.051 1.178-.159 2.065Zm-4.828 7.475.04-.04-.107 1.081a1.536 1.536 0 0 1-.44.913l-1.298 1.3.054-.38c.072-.506-.034-.993-.172-1.418a8.548 8.548 0 0 0-.164-.45c.738-.065 1.462-.38 2.087-1.006ZM5.205 5c-.625.626-.94 1.351-1.004 2.09a8.497 8.497 0 0 0-.45-.164c-.424-.138-.91-.244-1.416-.172l-.38.054 1.3-1.3c.245-.246.566-.401.91-.44l1.08-.107-.04.039Zm9.406-3.961c-.38-.034-.967-.027-1.746.163-1.558.38-3.917 1.496-6.937 4.521-.62.62-.799 1.34-.687 2.051.107.676.483 1.362 1.048 1.928.564.565 1.25.941 1.924 1.049.71.112 1.429-.067 2.048-.688 3.079-3.083 4.192-5.444 4.556-6.987.183-.771.18-1.345.138-1.713a2.835 2.835 0 0 0-.045-.283 3.078 3.078 0 0 0-.3-.041Z"/>
+                    <path d="M7.009 12.139a7.632 7.632 0 0 1-1.804-1.352A7.568 7.568 0 0 1 3.794 8.86c-1.102.992-1.965 5.054-1.839 5.18.125.126 3.936-.896 5.054-1.902Z"/>
+                </svg>
+            </a>
+            <ul class="dropdown-menu">
+                <li class="menuItem"><a href="#information" class="dropdown-item" >SOBRE EL SUS</a></li>
+                <li class="menuItem"><a href="#demo" class="dropdown-item" >CONOCE A LOS SUS</a></li>
+                <li class="menuItem"><a href="#descargar" class="dropdown-item" >COMO ADQUIRIR EL SUS</a></li>
+                <li class="menuItem"><a href="#newsletter" class="dropdown-item" >SUSCRIBITE AL NEWSLETTER?</a></li>
+                <li class="menuItem"><a href="#contacto" class="dropdown-item" >QUIENES SOMOS?</a></li>
+            </ul>
+        </div>
+    </nav>
+    <script>
+        // Agregar evento de clic a los enlaces del menú desplegable
+        document.querySelectorAll('.dropdown-menu a.dropdown-item').forEach(function (element) {
+          element.addEventListener('click', function (e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            window.scrollTo({
+              top: target.offsetTop - 60, // Ajusta el desplazamiento para dejar espacio para la barra de navegación fija si es necesario
+              behavior: 'smooth'
+            });
+            // Cerrar el menú desplegable después de hacer clic en el enlace
+            var dropdownToggle = document.querySelector('.dropdown-toggle');
+            if (dropdownToggle) {
+              dropdownToggle.classList.remove('show');
+            }
+          });
+        });
+    </script>
+    <!--
+    <script>
+        // Agregar evento de clic a los enlaces del menú desplegable
+        document.querySelectorAll('.dropdown-menu a.dropdown-item').forEach(function (element) {
+          element.addEventListener('click', function (e) {
+            e.preventDefault();
+            var target = document.querySelector(this.getAttribute('href'));
+            window.scrollTo({
+              top: target.offsetTop,
+              behavior: 'smooth'
+            });
+          });
+        });
+    </script>-->
+
+    <!--<nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Logo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#servicios">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#galeria">Galería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </nav>-->
+
+    <section id="information">
+        <div class="container">
+            <header>
+                <h1 class="titulo-principal">AMONG US</h1>
+            </header>
+        
+            <h2>QUE ES AMONG US?</h2>
+            <h3>Among Us es un juego en línea en el que los jugadores asumen roles de tripulantes o impostores en una nave espacial. Los tripulantes deben completar tareas mientras los impostores intentan sabotear y matar a los demás sin ser descubiertos. La comunicación y la deducción son clave para descubrir a los impostores y ganar. Es un juego popular y adictivo con un estilo de dibujos animados.</h3>
+        
+    </section>
+
+    <section id="demo">
+        <!-- Carousel -->
+        <div class="container">
+            <h2>CONOCE A LOS SUS</h2>
+            <h3>En Among Us debes elegir un color ya sea para ser diferente a los demas y saber quien es quien o por fines cosmeticos.
+                <br> Para ello tendras estos colores a tu disposicion:
+            </h3>
+
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+                <!-- seccion de las imagenes -->
+                <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Red.jpg" alt="imagenSus1">
+                                <p class="texto-tarjeta">RED</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Blue.jpg" alt="imagenSus2">
+                                <p class="texto-tarjeta">BLUE</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Green.jpg" alt="imagenSus3">
+                                <p class="texto-tarjeta">GREEN</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Pink.jpg" alt="imagenSus4">
+                                <p class="texto-tarjeta">PINK</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Orange.jpg" alt="imagenSus5">
+                                <p class="texto-tarjeta">ORANGE</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Yellow.jpg" alt="imagenSus6">
+                                <p class="texto-tarjeta">YELLOW</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Black.jpg" alt="imagenSus7">
+                                <p class="texto-tarjeta">BLACK</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/White.jpg" alt="imagenSus8">
+                                <p class="texto-tarjeta">WHITE</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Purple.jpg" alt="imagenSus9">
+                                <p class="texto-tarjeta">PURPLE</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Brown.jpg" alt="imagenSus10">
+                                <p class="texto-tarjeta">BROWN</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Cyan.jpg" alt="imagenSus11">
+                                <p class="texto-tarjeta">CYAN</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <img class="img-tarjeta " src="./Assets/Imagenes/Lime.jpg" alt="imagenSus12">
+                                <p class="texto-tarjeta">LIME</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Botones derecha e izquierda -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" btn-light>Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button"  data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" btn-light>Siguiente</span>
+                </button>
+            </div>
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="0" class="active"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="1"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="2"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="3"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="4"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="5"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="6"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="7"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="8"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="9"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="10"></li>
+                    <li data-bs-target="#carouselExampleControls" data-bs-slide-to="11"></li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section id="descargar">
+        <div class="container">
+            <h2>ADQUIERE EL SUS</h2>
+            <h3>Para jugar Among Us debes descargar un launcher de juegos como STEAM o EPIC GAMES para poder descargar el juego desde la tienda de los mismos.</h3>
+        </div> 
+    </section>
+        
+    <section id="newsletter">
+   
+       <div id="FormCont" class="container">
+           <h2>Enterate de mas!</h2>
+           <h3>Suscribete a nuestra newsletter aqui para mas informacion del SUS.</h3>
+           <form>
+               <div id="Form" class="mb-3">
+                   <label for="name" class="form-label">Name</label>
+                   <input type="text" class="form-control" id="name" name="name" required>
+               </div>
+               <div id="Form" class="mb-3">
+                   <label for="email" class="form-label">Email</label>
+                   <input type="email" class="form-control" id="email" name="email" required>
+               </div>
+               <div id="Form" class="mb-3">
+                   <label for="message" class="form-label">Message</label>
+                   <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+               </div>
+               <button type="submit" class="btn btn-primary">Submit</button>
+           </form>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+            <footer>
+                <div class="Footer">
+                    <img class="logo" src="./assets/Imagenes/LogoAmongUs.png" alt="logo">
+                    <h3 class="titulo footer">UNA PAGINA MADE IN ARGENTINA</h3>
+                </div>
+                <p>Sitio creado con fines educativos, por favor que no me caiga el copyright...
+                    <br>Hecha por Franco S. Rosa</p>
+            </footer>
+        </div>
+       
+    </section>
+        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    
+</body>
+
+</html>

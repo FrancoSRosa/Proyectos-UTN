@@ -1,0 +1,110 @@
+*{
+    background: url('../assets/Imagenes/AMOGUS_Fondo.jpg') 100% 0 fixed ;
+    background-size: cover;
+    color: #eeeeee;
+    margin: auto 5px;
+    padding: 50px 10px;
+}
+.container {
+    margin-top: 20px;
+  }
+nav{/*Parte de codigo que busque por ahi*/
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding: 0px 0px;
+}
+.navbar-brand{/*Parte de codigo que busque por ahi*/
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding: 0px 0px;
+    color: #eeeeee;
+
+}
+svg{
+    margin: auto 0px;
+    padding: 0px 0px;
+}
+.menuItem{
+    border: 1px solid white;
+}
+
+.logo{
+    height: 200px;
+    width: 300px;
+}
+.dropdown-item{
+    color: white;
+    margin: auto 0px;
+    padding: 0px 0px;
+}
+
+.header{
+    width: 700px;
+    min-height: 600px;
+    padding: 40px 10px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 85px;
+}
+h2{
+    font-size: 38px;
+}
+h3{
+    font-size: 24px;
+    width: 1000px;
+}
+
+.texto-tarjeta{
+    font-size: 30px;
+    font-weight: bold;
+}
+.carousel-inner{
+    display: flex;
+    align-items: center;
+}
+.carousel-item img {
+    height: 300px;
+    object-fit: cover;
+}
+
+.carousel-control-prev{
+    color: white;
+}
+.carousel-control-next{
+    color: white;
+}
+.carousel-indicators {
+    top: 10px;
+}
+
+.carousel-indicators li{
+    background-color: white; 
+    border-color: white;
+}
+
+#Form{
+    padding: 0px 100px;
+}
+
+/*
+.container{
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    overflow: auto;
+    gap: 100px;
+
+}
+.row{
+    padding: 20px 30px;
+    display: flex;
+    border: 2px solid white;
+    flex-direction: column;
+    align-items: center;
+    
+}
+*/
